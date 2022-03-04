@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.App .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid green;
+}
+
+.droppable-col {
+    width: 100%;
+    background-color: rgba(253, 99, 145, 0.842);
+    padding: 10px 10px 0 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.item {
+    margin-bottom: 10px;
+    background-color: rgb(235, 109, 109);
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.item.dragging {
+    background-color: rgb(223, 94, 228);
+}
